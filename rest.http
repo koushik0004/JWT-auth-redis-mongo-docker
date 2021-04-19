@@ -1,0 +1,32 @@
+### home route
+GET http://localhost:3100 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDY3OTU4ODksImV4cCI6MTYwNjc5NTkxOSwiYXVkIjoiNWZiNGFiMDgxMWM1M2Y2Yzg0ZTVkOTcwIiwiaXNzIjoibG9jYWxob3N0OjMwMDAifQ.qGrHPGAMzX3vWfQEdekhFNPP-KnQ4jhQrE_VmFGFSKw
+
+### some radnom route
+GET http://localhost:3100/abc_xyz HTTP/1.1
+
+### login route
+POST http://localhost:3100/auth/login
+Content-Type: application/json
+
+{
+    "email": "mama01@gmail.com",
+    "password": "123456"
+}
+
+### register route
+POST http://localhost:3100/auth/register
+Content-Type: application/json
+
+{
+    "email": "mama01@gmail.com",
+    "password": "123456"
+}
+
+### refresh-token route
+POST http://localhost:3100/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDYzNTc5MjYsImV4cCI6MTYzNzkxNTUyNiwiYXVkIjoiNWZiNGFiMDgxMWM1M2Y2Yzg0ZTVkOTcwIiwiaXNzIjoibG9jYWxob3N0OjMwMDAifQ.5M1rQOcSbny6UMGRGT_egFVR78_xdz_0G_hn4Jcz1tQ"
+}
